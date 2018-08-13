@@ -1,0 +1,12 @@
+{% extends 'article/base.html' %}
+
+{% block meta_title %}Main page{% endblock meta_title %}
+
+{% block title %}Articles{% endblock title %}
+
+{% block content %}
+   <form action="" method="POST">
+        {% csrf_token %}
+        <button type="submit">Go!</button>
+   </form>
+{% endblock content %}
